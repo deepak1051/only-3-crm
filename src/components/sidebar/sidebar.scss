@@ -1,0 +1,87 @@
+.sidebar {
+  flex: 1;
+  border-right: 0.5px solid rgb(230, 227, 227);
+  min-height: 100vh;
+  background-color: rgb(255, 255, 255);
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // width: 280px;
+  // height: 100%;
+  .top {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      font-size: 1.3rem;
+      color: rebeccapurple;
+      font-weight: bold;
+    }
+  }
+  .center {
+    padding-left: 20px;
+    ul {
+      list-style: none;
+
+      .title {
+        font-size: 20px;
+        color: #999;
+        margin-top: 10px;
+        margin-bottom: 5px;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: darkgrey;
+        // &:active {
+        //   background-color: deeppink;
+        //   color: green;
+        // }
+        // &:focus {
+        //   background-color: teal;
+        // }
+      }
+      // .isActive {
+      //   background-color: darkblue;
+      // }
+      li,
+      .nav-container {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        cursor: pointer;
+        gap: 5px;
+        &:hover {
+          // background-color: #ece8ff;
+        }
+        // &:focus {
+        //   background-color: teal;
+        // }
+      }
+      button {
+        // &:hover {
+        //   // background-color: #ece8ff;
+        // }
+        // &:focus {
+        //   background-color: teal;
+        // }
+        // &:active {
+        //   background-color: yellow;
+        // }
+      }
+    }
+    .logout {
+      background-color: none;
+      border: 1px solid teal;
+      color: teal;
+      padding: 5px;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 2rem;
+    }
+  }
+}
